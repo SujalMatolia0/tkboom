@@ -7,9 +7,9 @@ import { SITE_CONFIG } from "@/config/site";
 
 const stats = [
   { value: "6+", label: "Projects" },
-  { value: "3+", label: "Years exp." },
+  { value: "1.5+", label: "Years exp." },
   { value: "20+", label: "Technologies" },
-  { value: "10+", label: "Clients" },
+  { value: "2", label: "Companies" },
 ];
 
 export function About() {
@@ -99,19 +99,18 @@ export function About() {
 
             <div className="space-y-4 text-[#3d3530] leading-relaxed text-[15px]">
               <p>
-                I&apos;m a Full Stack Engineer and Systems Architect with a passion for
-                building scalable systems that solve real-world problems. With experience
-                spanning from early-stage startups to enterprise environments, I design
-                systems that grow with your needs.
+                I&apos;m a Full Stack Engineer with hands-on experience in enterprise systems
+                and modern web development. Oracle Fusion experience as a fresher is rare —
+                it is my sharpest edge. Strong bias toward shipping.
               </p>
               <p>
-                My expertise lies in translating complex requirements into elegant,
-                maintainable solutions — whether it&apos;s architecting microservices,
-                optimizing database queries, or crafting intuitive user interfaces.
+                I design systems that scale, from early-stage startups to enterprise IoT
+                platforms. My work spans quantum computing research tools, e-commerce
+                marketplaces, and enterprise workflow automation.
               </p>
               <p>
                 Beyond code, I&apos;m deeply interested in quantum computing research,
-                IoT automation, and the intersection of AI and systems design.
+                IoT automation, and building tools that make developers more productive.
               </p>
             </div>
 

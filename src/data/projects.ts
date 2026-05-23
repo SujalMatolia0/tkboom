@@ -7,36 +7,36 @@ export const projects: Project[] = [
     category: "Full Stack",
     year: "2026",
     image: "/images/kuro.jpg",
-    description: "Native desktop productivity tool for enterprise developers. Local-first SQLite storage, optional Supabase cloud sync.",
+    description: "Native desktop productivity tool for enterprise developers with Error Decoder, Permission Advisor (Oracle RBAC/Salesforce mapping), and Knowledge Hub. Local-first SQLite storage with optional Supabase cloud sync.",
     challenge: "Create a native app with local-first architecture and optional cloud integration, powered by local LLM inference.",
     solution: "Electron + React 19 with Groq (Llama 3.3-70b) for near-instant AI responses. Integrated Error Decoder, Permission Advisor with Oracle RBAC/Salesforce mapping, Knowledge Hub.",
     results: "Shipped production app with secure credential storage (Electron safeStorage) and audit logging.",
     technologies: ["Electron", "React 19", "Vite", "Tailwind CSS v4", "Framer Motion", "SQLite", "Supabase", "Groq API"],
     links: {
-      github: "https://github.com/SujalMatolia0/",
+      github: "https://github.com/SujalMatolia0/Kuro",
       live: null
     },
     highlights: [
       "Desktop application architecture",
       "Local-first data design",
-      "AI integration",
+      "AI integration with Groq",
       "Security (credential storage)"
     ]
   },
   {
     id: 2,
-    title: "ArtCraft Marketplace",
+    title: "Inkbloom",
     category: "Full Stack",
     year: "2025",
-    image: "/images/artcraft.jpg",
+    image: "/images/inkbloom.jpg",
     description: "Custom e-commerce platform for original artwork. Modular system design with seamless user, artwork, and payment interactions.",
     challenge: "Build a scalable marketplace where artworks, users, and payments interact seamlessly with type-safe interactions.",
     solution: "Next.js frontend with adaptive UI (Mantine). Supabase backend with event-driven logic and transaction hooks. Razorpay for payments.",
     results: "Production platform handling artwork listings, user profiles, and secure payments.",
     technologies: ["Next.js", "Mantine", "Supabase", "Razorpay", "PostgreSQL"],
     links: {
-      github: "https://github.com/SujalMatolia0/ArtCraft-marketplace",
-      live: null
+      github: "https://github.com/SujalMatolia0/Inkbloom",
+      live: "https://inkbloom.vercel.app"
     },
     highlights: [
       "E-commerce architecture",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "Mantine", "GitHub OAuth", "PostgreSQL", "Automation pipelines"],
     links: {
       github: "https://github.com/SujalMatolia0/locus-hack",
-      live: null
+      live: "https://locus-hack.vercel.app"
     },
     highlights: [
       "OAuth integration",

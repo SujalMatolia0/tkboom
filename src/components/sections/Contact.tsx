@@ -26,8 +26,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 px-6 sm:px-10" ref={ref}>
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="bg-[#1a1410] text-[#f5f0e8] rounded-t-[2.5rem] mt-20" ref={ref}>
+      <div className="max-w-6xl mx-auto px-6 sm:px-10 py-28">
         {/* Label */}
         <motion.div
           initial={{ opacity: 0, x: -10 }}
@@ -36,8 +36,8 @@ export function Contact() {
           className="flex items-center gap-3 mb-16"
         >
           <span className="text-[#c4956a] text-xs tracking-[0.2em] uppercase font-medium">06</span>
-          <div className="h-px flex-1 bg-[#1a1410]/10" />
-          <span className="text-[#8a7f76] text-xs tracking-[0.15em] uppercase">Contact</span>
+          <div className="h-px flex-1 bg-[#f5f0e8]/10" />
+          <span className="text-[#f5f0e8]/60 text-xs tracking-[0.15em] uppercase">Contact</span>
         </motion.div>
 
         {/* Big CTA heading */}
@@ -45,7 +45,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-serif text-[clamp(2.5rem,8vw,7rem)] leading-[0.95] tracking-tight text-[#1a1410] mb-16"
+          className="font-serif text-[clamp(2.5rem,8vw,7rem)] leading-[0.95] tracking-tight text-[#f5f0e8] mb-16"
         >
           Let&apos;s build<br />
           <span className="italic text-[#c4956a]">something great.</span>
@@ -58,7 +58,7 @@ export function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className="text-[#3d3530] leading-relaxed mb-10 max-w-sm">
+            <p className="text-[#f5f0e8]/70 leading-relaxed mb-10 max-w-sm">
               Have a project in mind or just want to say hello? I&apos;d love to hear
               from you. Drop me a message and I&apos;ll get back to you soon.
             </p>
@@ -70,15 +70,15 @@ export function Contact() {
                 { label: "GitHub", value: "SujalMatolia0", href: SITE_CONFIG.links.github },
                 { label: "LinkedIn", value: "sujal-sharma", href: SITE_CONFIG.links.linkedin },
               ].map((item) => (
-                <div key={item.label} className="flex items-center justify-between border-b border-[#1a1410]/8 pb-4">
-                  <span className="text-[#8a7f76] text-xs tracking-[0.1em] uppercase">
+                <div key={item.label} className="flex items-center justify-between border-b border-[#f5f0e8]/10 pb-4">
+                  <span className="text-[#f5f0e8]/50 text-xs tracking-[0.1em] uppercase">
                     {item.label}
                   </span>
                   <a
                     href={item.href}
                     target={item.label !== "Email" && item.label !== "Phone" ? "_blank" : undefined}
                     rel={item.label !== "Email" && item.label !== "Phone" ? "noopener noreferrer" : undefined}
-                    className="text-[#1a1410] text-sm hover:text-[#c4956a] transition-colors"
+                    className="text-[#f5f0e8] text-sm hover:text-[#c4956a] transition-colors"
                   >
                     {item.value} ↗
                   </a>
@@ -102,7 +102,7 @@ export function Contact() {
               <div key={field.id}>
                 <label
                   htmlFor={field.id}
-                  className="block text-xs text-[#8a7f76] tracking-[0.1em] uppercase mb-2"
+                  className="block text-xs text-[#f5f0e8]/50 tracking-[0.1em] uppercase mb-2"
                 >
                   {field.label}
                 </label>
@@ -114,7 +114,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   placeholder={field.placeholder}
-                  className="w-full bg-[#e8e0d5] border border-[#1a1410]/10 rounded-xl px-4 py-3 text-[#1a1410] text-sm placeholder-[#8a7f76] focus:outline-none focus:border-[#c4956a]/50 transition-colors"
+                  className="w-full bg-[#f5f0e8]/5 border border-[#f5f0e8]/10 rounded-xl px-4 py-3 text-[#f5f0e8] text-sm placeholder-[#f5f0e8]/30 focus:outline-none focus:border-[#c4956a]/50 transition-colors"
                 />
               </div>
             ))}
@@ -122,7 +122,7 @@ export function Contact() {
             <div>
               <label
                 htmlFor="message"
-                className="block text-xs text-[#8a7f76] tracking-[0.1em] uppercase mb-2"
+                className="block text-xs text-[#f5f0e8]/50 tracking-[0.1em] uppercase mb-2"
               >
                 Message
               </label>
@@ -134,13 +134,13 @@ export function Contact() {
                 required
                 rows={5}
                 placeholder="Tell me about your project..."
-                className="w-full bg-[#e8e0d5] border border-[#1a1410]/10 rounded-xl px-4 py-3 text-[#1a1410] text-sm placeholder-[#8a7f76] focus:outline-none focus:border-[#c4956a]/50 transition-colors resize-none"
+                className="w-full bg-[#f5f0e8]/5 border border-[#f5f0e8]/10 rounded-xl px-4 py-3 text-[#f5f0e8] text-sm placeholder-[#f5f0e8]/30 focus:outline-none focus:border-[#c4956a]/50 transition-colors resize-none"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-[#1a1410] text-[#f2ede6] py-4 rounded-full text-sm tracking-wide hover:bg-[#3d3530] transition-colors"
+              className="w-full bg-[#c4956a] text-[#1a1410] py-4 rounded-full text-sm tracking-wide hover:bg-[#d4a57a] transition-colors font-medium"
             >
               Send message →
             </button>
